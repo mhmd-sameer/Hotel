@@ -47,6 +47,11 @@ const FoodScreen = () => {
 
   return (
     <View style={styles.screen}>
+    <View style={styles.header}>
+        <View style={styles.headerInner}>
+          <Text style={styles.title}>Food Category</Text>
+        </View>
+      </View>
       {/* Render food categories */}
       <View style={styles.categoryContainer}>
         {foodCategories.map(category => (
@@ -80,6 +85,35 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'orange',
     padding: 10,
+  },
+  header: {
+    marginBottom: 20,
+    marginTop:40,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    paddingVertical: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  headerInner: {
+    backgroundColor: 'orange',
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    borderRadius: 15,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 2,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: 'white',
+    textAlign: 'center',
   },
   categoryContainer: {
     flexDirection: 'row',

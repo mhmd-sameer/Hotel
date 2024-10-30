@@ -37,7 +37,7 @@ const Notifications = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'orange',
     paddingTop: 20,
     paddingHorizontal: 20,
   },
@@ -82,8 +82,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 5,
     elevation: 3,
-    borderLeftWidth: 5,
-    borderLeftColor: 'orange',
   },
   notificationTitle: {
     fontSize: 18,

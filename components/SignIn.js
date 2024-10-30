@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome'; // Import FontAwesome icons
 
 const SignInPage = ({ navigation }) => {
   const handleGoogleSignIn = () => {
@@ -14,13 +15,36 @@ const SignInPage = ({ navigation }) => {
     navigation.navigate('Home'); // Navigate to Home for staff
   };
 
+  const CustomButton = ({ title, onPress, iconName }) => (
+    <TouchableOpacity style={styles.button} onPress={onPress}>
+      {iconName && <Icon name={iconName} size={24} color="#fff" style={styles.icon} />}
+      <Text style={styles.buttonText}>{title}</Text>
+    </TouchableOpacity>
+  );
+
   return (
     <View style={styles.container}>
-      <Button title="Sign in with Google" color="#FFA500" onPress={handleGoogleSignIn} />
+      <Text style={styles.headerText}>Welcome</Text>
+
+      <CustomButton 
+        title="Sign in with Google" 
+        onPress={handleGoogleSignIn} 
+        iconName="google" 
+      />
       <View style={styles.spacer} />
-      <Button title="Sign in as Client" color="#FFA500" onPress={handleClientLogin} />
+
+      <CustomButton 
+        title="Sign in as Client" 
+        onPress={handleClientLogin} 
+        iconName="user" 
+      />
       <View style={styles.spacer} />
-      <Button title="Login as Staff" color="#FFA500" onPress={handleStaffLogin} />
+
+      <CustomButton 
+        title="Login as Staff" 
+        onPress={handleStaffLogin} 
+        iconName="users" 
+      />
     </View>
   );
 };
@@ -30,9 +54,40 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#f5f5f5',
+    paddingHorizontal: 20,
+  },
+  headerText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#FFA500',
+    marginBottom: 50,
   },
   spacer: {
     height: 20,
+  },
+  button: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFA500',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderRadius: 25,
+    width: '80%',
+    justifyContent: 'center',
+    elevation: 5, // Shadow for Android
+    shadowColor: '#000', // Shadow for iOS
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 4 },
+  },
+  icon: {
+    marginRight: 10,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
 

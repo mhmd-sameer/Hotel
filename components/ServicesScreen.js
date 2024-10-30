@@ -28,6 +28,11 @@ const ServicesScreen = () => {
 
   return (
     <View style={styles.screen}>
+    <View style={styles.header}>
+        <View style={styles.headerInner}>
+          <Text style={styles.title}>Service Available</Text>
+        </View>
+      </View>
       <FlatList
         data={hotelServices}
         renderItem={renderServiceItem}
@@ -44,11 +49,33 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: 'orange',
   },
+  header: {
+    marginBottom: 20,
+    marginTop:40,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    paddingVertical: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  headerInner: {
+    backgroundColor: 'orange',
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    borderRadius: 15,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 2,
+  },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 16,
-    color: '#FFA500',
+    color: 'white',
     textAlign: 'center',
   },
   serviceContainer: {
