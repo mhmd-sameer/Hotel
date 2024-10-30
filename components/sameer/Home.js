@@ -65,13 +65,14 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fffaf0',
+    backgroundColor: 'orange',
     paddingTop: 20,
+    
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: 'tomato',
+    color: 'white',
     textAlign: 'center',
   },
   section: {
@@ -81,29 +82,30 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: 'tomato',
+    color: 'white',
     marginBottom: 10,
   },
   horizontalList: {
     paddingBottom: 20,
   },
   header: {
+    marginBottom:20,
     margin: 20,
     borderRadius: 10,
-    backgroundColor: 'tomato',
+    backgroundColor: 'white',
     paddingVertical: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
   headerInner: {
-    backgroundColor: '#ffe5e5',
+    backgroundColor: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 10,
     alignItems: 'center',
   },
   roomCard: {
-    backgroundColor: '#ffe5e5',
+    backgroundColor: 'white',
     padding: 20,
     borderRadius: 10,
     marginRight: 15,
@@ -113,7 +115,7 @@ const styles = StyleSheet.create({
   roomType: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#c44e3c',
+    color: 'orange',
     marginBottom: 10,
   },
   roomDetails: {
@@ -122,7 +124,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   bookButton: {
-    backgroundColor: '#ff6347',
+    backgroundColor: 'orange',
     paddingVertical: 10,
     borderRadius: 5,
     marginTop: 10,

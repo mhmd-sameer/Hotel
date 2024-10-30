@@ -16,35 +16,35 @@ const HomePage = () => {
         name="Rooms" 
         component={RoomsScreen} 
         options={{
-          tabBarIcon: ({ color }) => <Icon name="bed" color="#FFA500" size={24}   options={{ headerShown: false }}/>, // Bed icon for Rooms
+          headerShown: false,tabBarIcon: ({ color }) => <Icon name="bed" color="#FFA500" size={24}   />, // Bed icon for Rooms
         }} 
       />
       <Tab.Screen 
         name="Services" 
         component={ServicesScreen} 
         options={{
-          tabBarIcon: ({ color }) => <Icon name="bell" color="#FFA500" size={24}  options={{ headerShown: false }}/>, // Bell icon for Services
+          headerShown: false,tabBarIcon: ({ color }) => <Icon name="bell" color="#FFA500" size={24} />, // Bell icon for Services
         }} 
       />
       <Tab.Screen 
         name="Food" 
         component={FoodScreen} 
         options={{
-          tabBarIcon: ({ color }) => <Icon name="cutlery" color="#FFA500" size={24}  options={{ headerShown: false }}/>, // Cutlery icon for Food
+         headerShown: false, tabBarIcon: ({ color }) => <Icon name="cutlery" color="#FFA500" size={24} />, // Cutlery icon for Food
         }} 
       />
       <Tab.Screen 
         name="Customer Care" 
         component={CustomerCareScreen} 
         options={{
-          tabBarIcon: ({ color }) => <Icon name="phone" color="#FFA500" size={24}  options={{ headerShown: false }} />, // Phone icon for Customer Care
+          headerShown: false,tabBarIcon: ({ color }) => <Icon name="phone" color="#FFA500" size={24}  />, // Phone icon for Customer Care
         }} 
       />
       <Tab.Screen 
         name="Dashboard" 
         component={DashboardScreen} 
         options={{
-          tabBarIcon: ({ color }) => <Icon name="user" color="#FFA500" size={24}  options={{ headerShown: false }}/>, // User icon for Dashboard
+          headerShown: false,tabBarIcon: ({ color }) => <Icon name="user" color="#FFA500" size={24} />, // User icon for Dashboard
         }} 
       />
     </Tab.Navigator>

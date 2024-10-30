@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: 20,
     marginTop:20,
-    backgroundColor: 'tomato',
+    backgroundColor: 'white',
     borderRadius: 10,
     paddingVertical: 20,
     alignItems: 'center',
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   headerInner: {
-    backgroundColor: '#ffe5e5',
+    backgroundColor: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 30,
     borderRadius: 15,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   title: {
-    color: 'tomato',
+    color: 'white',
     fontSize: 28,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 3,
     borderLeftWidth: 5,
-    borderLeftColor: 'tomato',
+    borderLeftColor: 'orange',
   },
   notificationTitle: {
     fontSize: 18,

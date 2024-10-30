@@ -9,7 +9,7 @@ const hotelServices = [
   { id: '2', name: 'Laundry', icon: 'shopping-bag', description: 'Same-day laundry services for your convenience.' },
   { id: '3', name: 'Spa', icon: 'leaf', description: 'Relax and rejuvenate with our full-service spa.' },
   { id: '4', name: 'Gym', icon: 'heartbeat', description: 'State-of-the-art fitness equipment and personal trainers.' },
-  { id: '5', name: 'Swimming Pool', icon: 'water', description: 'Heated outdoor pool available year-round.' },
+  { id: '5', name: 'Swimming Pool', icon: 'tint', description: 'Heated outdoor pool available year-round.' },
   { id: '6', name: 'Free WiFi', icon: 'wifi', description: 'High-speed WiFi access throughout the hotel.' },
   { id: '7', name: 'Parking', icon: 'car', description: 'Complimentary valet parking for all guests.' },
   { id: '8', name: 'Airport Shuttle', icon: 'plane', description: 'Free airport shuttle service available 24/7.' },

@@ -51,8 +51,9 @@ const RoomsScreen = () => {
   };
 
   return (
+    
     <View style={styles.screen}>
-
+    
       <Text style={styles.subTitle}>Discounted Rooms</Text>
       {renderRoomList(discountedRooms)}
 
@@ -71,10 +72,33 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor:'orange'
   },
+  header: {
+    marginBottom: 20,
+    marginTop:20,
+    backgroundColor: 'tomato',
+    borderRadius: 10,
+    paddingVertical: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  headerInner: {
+    backgroundColor: '#ffe5e5',
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    borderRadius: 15,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 2,
+  },
   title: {
-    fontSize: 24,
+    color: 'tomato',
+    fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 16,
     textAlign: 'center',
   },
   subTitle: {
